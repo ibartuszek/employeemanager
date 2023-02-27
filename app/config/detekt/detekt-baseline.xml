@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>EmptyFunctionBlock:EmployeemanagerApplicationTests.kt$EmployeemanagerApplicationTests${ }</ID>
+    <ID>SpreadOperator:EmployeemanagerApplication.kt$(*args)</ID>
+  </CurrentIssues>
+</SmellBaseline>
