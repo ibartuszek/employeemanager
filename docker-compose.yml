@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  employee-db:
+    image: "postgres"
+    environment:
+      POSTGRES_USER: superman
+      POSTGRES_PASSWORD: superman
+      POSTGRES_DB: employee-db
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+volumes:
+  database-data:
