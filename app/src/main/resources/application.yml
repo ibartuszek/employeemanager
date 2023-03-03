@@ -8,8 +8,13 @@ spring:
     open-in-view: false
     show-sql: true
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
+  flyway:
+    schemas: public
+    baseline-on-migration: true
+    placeholder-replacement: false
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}

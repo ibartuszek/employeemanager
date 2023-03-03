@@ -15,6 +15,8 @@ java.sourceCompatibility = JavaVersion.VERSION_17
 
 // versions
 val kotlinLoggingVersion = "3.0.5"
+val flywayVersion = "9.15.1"
+val hibernateTypesVersion = "2.21.1"
 
 repositories {
 	mavenCentral()
@@ -30,6 +32,7 @@ dependencies {
 	// DB
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	runtimeOnly("org.postgresql:postgresql")
+	implementation("org.flywaydb:flyway-core:$flywayVersion")
 	implementation("com.vladmihalcea:hibernate-types-60:$hibernateTypesVersion")
 
 
